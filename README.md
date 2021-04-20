@@ -1,6 +1,6 @@
 # BookApp
 
-## Envronment
+## Environment
 ./.env
 ```
 DB_CONNECTION=${YOUR CONNECTION}
