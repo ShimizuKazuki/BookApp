@@ -1,5 +1,8 @@
 <?php
 
+use App\Book;
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +15,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $books = Book::all();
+    return view('books', ['books' => $books]);
 });
