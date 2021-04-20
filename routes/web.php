@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('books', ['books' => $books]);
 });
 
-Route::post('/book', function( Request $request){
+Route::post('/book', function(Request $request){
     $validator = Validator::make($request->all(),[
         'name' => 'required|max::255'
     ]);
@@ -27,6 +27,11 @@ Route::post('/book', function( Request $request){
     $book = new Book;
     $book->title = $request->name;
     $book->save();
+    return redirect('/');
+});
+
+Route::delete('/book/{book}', function(Book $book){
+    $book->delete();
 
     return redirect('/');
 });
