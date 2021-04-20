@@ -1,7 +1,7 @@
 # BookApp
 
 ## Envronment
-./env
+./.env
 ```
 DB_CONNECTION=${YOUR CONNECTION}
 DB_HOST=${YOUR HOST IP}
