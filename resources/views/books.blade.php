@@ -5,7 +5,7 @@
 		<div class="col-sm-offset-2 col-sm-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					New Book
+					新たに本を追加する
 				</div>
 
 				<div class="panel-body">
@@ -47,7 +47,7 @@
 					<div class="panel-body">
 						<table class="table table-striped task-table">
 							<thead>
-								<th>Book</th>
+								<th>書籍タイトル</th>
 								<th>&nbsp;</th>
 							</thead>
 							<tbody>
